@@ -6,7 +6,7 @@ export const BigCard = ({ image }) => {
   return (
     <div className={styles.container}>
       <div className={styles["container__passpartout"]}>
-        <img src={image} className={styles["container__image"]}></img>
+        <img src={image} className={styles["container__image"]} alt="an actor"></img>
         <div className={styles["container__preview"]}>
           <Button cta="Preview" color="secondary"></Button>
         </div>
