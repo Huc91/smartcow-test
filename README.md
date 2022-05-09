@@ -1,6 +1,7 @@
 # :cow: SmartCow test
 
 SmartCow Front-end test
+[live example on Netlify](https://tubular-kangaroo-46d0e8.netlify.app/)
 
 ## :rocket: Goals and purpose
 
