@@ -1,47 +1,47 @@
-@use '../../styles/globals';
+@use "../../styles/globals";
 
 .controls {
-	width: 50%;
-	margin-left: 1rem;
+  width: 50%;
+  margin-left: 1rem;
 }
 
 .options {
-	margin-bottom: 1rem;
-	& > ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		& > li {
-			& > button {
-				background-color: transparent;
-				border: 0;
-				outline: 0;
-				color: globals.$grey;
-				font-weight: 500;
-				font-size: 1rem;
-				cursor: pointer;
-			}
-		}
-	}
+  margin-bottom: 1rem;
+  & > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    & > li {
+      & > button {
+        background-color: transparent;
+        border: 0;
+        outline: 0;
+        color: globals.$grey;
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .preview {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .minicard {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	padding-right: 1rem;
-	& > img {
-		width: 9rem;
-	}
-	& > span {
-		font-size: 0.7rem;
-	}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding-right: 1rem;
+  & > img {
+    width: 9rem;
+  }
+  & > span {
+    font-size: 0.7rem;
+  }
 }

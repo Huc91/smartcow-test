@@ -1,5 +1,7 @@
-import { createGlobalState } from 'react-hooks-global-state';
+import { createGlobalState } from "react-hooks-global-state";
 
-const { setGlobalState, useGlobalState } = createGlobalState({ isUserLoggedIn: false });
+const { setGlobalState, useGlobalState } = createGlobalState({
+  isUserLoggedIn: false,
+});
 
-export { setGlobalState, useGlobalState}
+export { setGlobalState, useGlobalState };

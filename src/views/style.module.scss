@@ -1,39 +1,38 @@
-@use '../styles/globals';
+@use "../styles/globals";
 
 .layout {
+  display: flex;
+  &__nav {
+    width: 6.375rem;
+    height: 100vh;
+    border-right: 1px solid black;
+    margin-right: 1.625rem;
     display: flex;
-    &__nav {
-        width: 6.375rem;
-        height: 100vh;
-        border-right: 1px solid black;
-        margin-right: 1.625rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & > ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            margin-top: 1rem;
-            text-align: center;
-        }
+    flex-direction: column;
+    align-items: center;
+    & > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+      text-align: center;
     }
-
+  }
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 0.3rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    color: globals.$grey;
-    cursor: pointer;
-    &--active {
-        background-color: globals.$secondary-light;
-        color: globals.$secondary;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: globals.$grey;
+  cursor: pointer;
+  &--active {
+    background-color: globals.$secondary-light;
+    color: globals.$secondary;
+  }
 }

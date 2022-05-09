@@ -1,35 +1,35 @@
-@use 'src/styles/globals';
+@use "src/styles/globals";
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 html,
 body {
-	background-color: globals.$white;
-	color: globals.$black;
+  background-color: globals.$white;
+  color: globals.$black;
 }
 
 body {
-	min-height: 100vh;
-	font-family: 'Poppins', sans-serif;
-	font-size: 16px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
-	flex-grow: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App {
-	width: 100%;
-	height: 100vh;
-	box-sizing: border-box;
-	padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 h1 {
-	font-size: 1.375rem;
+  font-size: 1.375rem;
 }
