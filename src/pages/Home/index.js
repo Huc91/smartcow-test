@@ -14,15 +14,14 @@ import * as styles from './style.module.scss';
 const HomePage = () => {
 
 	const [actorSelected, setActorSelected] = useState(actorList[0]);
-
-	console.log(actorSelected);
+	
 	return (
 		<Page>
 			<div className={styles.header}>
 				<h1>Saying Hi to my customers</h1>
 				<div>
+					<Button cta="Cancel" color="grey"></Button>
 					<Button cta="Save"></Button>
-					<Button cta="Cancel"></Button>
 				</div>
 			</div>
 			<hr></hr>

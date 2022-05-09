@@ -27,7 +27,7 @@ export const Controls = ({ onActorSelection }) => {
 	]
 	return (
 		<div className={styles.controls}>
-			<nav className={'options'}>
+			<nav className={styles.options}>
 				<ul>
 					{options.map((option) => <li key={option.value}><button onClick={() => setSelection(option.value)}>{option.text}</button></li>)}
 				</ul>

@@ -12,7 +12,7 @@ export const BigCard = ({ image }) => {
                 <img src={image} className={styles['container__image']}>
                 </img>
                 <div className={styles['container__preview']}>
-                    <Button cta="Preview"></Button>
+                    <Button cta="Preview" color="secondary"></Button>
                 </div>
             </div>
             <div className={styles['container__box']}>
@@ -20,7 +20,7 @@ export const BigCard = ({ image }) => {
                     Type or paste your videoscript here.You can also request a translation of 
                     an English script to any of 27 other languages
                 </p>
-                <Button cta="Listen"></Button>
+                <Button cta="Listen" color="grey"></Button>
             </div>
 		</div>
 	);

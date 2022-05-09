@@ -11,12 +11,12 @@ function App() {
 
 	return (
 		<div className="App">
-			<Layout>
-				<BrowserRouter>
+			<BrowserRouter>
+				<Layout>
 					<Routes />
 					{isUserLoggedin ? <Redirect to="/"/> : <Redirect to="/login"/>}
-				</BrowserRouter>
-			</Layout>
+				</Layout>
+			</BrowserRouter>
 		</div>
 	);
 }

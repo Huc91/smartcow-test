@@ -1,19 +1,39 @@
 @use '../../styles/globals';
 
 .container {
-	background-color: globals.$secondary;
+	
 	font-size: 0.875rem;
 	font-weight: 500;
 	padding: 0.5rem;
 	cursor: pointer;
 	border-radius: 0.375rem;
 	border: none;
+	margin-right: 0.5rem;
 	transition: all 0.2s ease-in;
 	will-change: transform;
-	&:hover {
-		background-color: globals.$secondary-light;
+	&--primary {
+		background-color: globals.$primary;
+		color: globals.$white;
+			&:hover {
+				background-color: globals.$primary-light;
+			}
 	}
-
+	&--secondary {
+		background-color: globals.$secondary-light;
+		color: globals.$secondary;
+		&:hover {
+			background-color: globals.$secondary;
+			color: globals.$secondary-light;
+		}
+	}
+	&--grey {
+		background-color: globals.$grey-light;
+		color: globals.$grey;
+		&:hover {
+			background-color: globals.$grey;
+			color: globals.$black;
+		}
+	}
 	&--disabled {
 		background-color: globals.$grey-light;
 		color: globals.$grey;
