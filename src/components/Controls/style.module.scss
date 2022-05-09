@@ -1,0 +1,22 @@
+@use '../../styles/globals';
+
+.controls {
+	width: 50%;
+}
+
+.preview {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.minicard {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1rem;
+	& > img {
+		width: 9rem;
+		border: 1px solid globals.$grey-light;
+	}
+}
