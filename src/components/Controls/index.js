@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
-import { actorList } from "../../data/actorList";
 //style
 import * as styles from "./style.module.scss";
 
-export const Controls = ({ onActorSelection }) => {
+export const Controls = ({ onActorSelection, actorList }) => {
   const [selection, setSelection] = useState("actor");
   const options = [
     {

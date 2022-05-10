@@ -26,7 +26,8 @@ const HomePage = () => {
       <div className={styles.content}>
         <BigCard image={actorSelected.src}></BigCard>
         <Controls
-          onActorSelection={(actor) => setActorSelected(actor)}
+				  onActorSelection={(actor) => setActorSelected(actor)}
+				  actorList={actorList}
         ></Controls>
       </div>
     </Page>
