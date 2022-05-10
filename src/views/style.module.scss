@@ -2,10 +2,11 @@
 
 .layout {
   display: flex;
+  height: 100%;
   &__nav {
     width: 6.375rem;
-    height: 100vh;
-    border-right: 1px solid black;
+    height: 100%;
+    border-right: 1px solid globals.$grey;
     margin-right: 1.625rem;
     display: flex;
     flex-direction: column;
