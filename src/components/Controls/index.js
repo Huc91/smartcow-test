@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { Button } from "../Button";
 //style
 import * as styles from "./style.module.scss";
 
 export const Controls = ({ onActorSelection, actorList }) => {
-  const [selection, setSelection] = useState("actor");
+const [selection, setSelection] = useState("actor");
   const options = [
     {
       text: "Actor",
@@ -22,6 +23,8 @@ export const Controls = ({ onActorSelection, actorList }) => {
       value: "background",
     },
   ];
+  const [alignmentOption, setAlignmentOption] = useState('center')
+
   return (
     <div className={styles.controls}>
       <nav className={styles.options}>
@@ -49,8 +52,14 @@ export const Controls = ({ onActorSelection, actorList }) => {
             ))}
           </div>
         )}
-        {selection === "voice" && "voice"}
-        {selection === "alignment" && "alignment"}
+			  {selection === "voice" && "Voice"}
+			{selection === "alignment" && (
+			<div className={styles['preview--alignment']}>
+					  <Button onClick={() => setAlignmentOption('left')} cta="left" color={alignmentOption === 'left' ? 'secondary' : 'grey'}></Button>
+					  <Button onClick={() => setAlignmentOption('center')} cta="center" color={alignmentOption === 'center' ? 'secondary' : 'grey'}></Button>
+					  <Button onClick={() => setAlignmentOption('right')} cta="right" color={alignmentOption === 'right' ? 'secondary' : 'grey'}></Button>
+          	</div>
+		)}
         {selection === "background" && "background"}
       </div>
     </div>
