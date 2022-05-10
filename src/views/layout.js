@@ -16,7 +16,7 @@ export default function Layout(props) {
       <nav className={styles["layout__nav"]}>
         <ul>
           <li>
-            <Link to={isUserLoggedin ? '/' : '/login'}>
+            <Link to={isUserLoggedin ? "/" : "/login"}>
               <img src={logo} alt="logo"></img>
             </Link>
           </li>
